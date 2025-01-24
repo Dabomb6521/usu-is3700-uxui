@@ -1,0 +1,112 @@
+/* Style1 CSS for Pacific Site */
+
+/* body {
+	font-size:100%;
+	} */	
+
+/* Embedded Fonts */
+
+/*@font-face	{
+			font-family: "league Gothic";
+			src:url("../fonts/leagueGothic-Regular.otf") format("opentype");
+			}*/
+
+/* Type (Element) Selectors */	
+
+h1	{
+	color: blue;
+		 /*font-size: 2.5em;*/         /* 40px / 16 px */
+		/*font-family:"league Gothic", Arial,sans-serif;*/
+	}
+	
+h2	{
+	color: orange; 
+	  /*font-family: impact, charcoal, sans-serif; */
+	 /*font-size: 1.5em; */         /* 24px / 16px */
+	/*font: 7.5em impact, charcoal, sans-serif;*/
+	} 
+
+
+p 		{
+		font-weight: bold; 
+		color: green;
+		/*font: italic small-caps bold 1em tahoma;*/
+		/*letter-spacing: -2px;	*/		
+		/*text-indent: 2em;	*/	
+		/*text-decoration: underline;	*/
+		/*word-spacing: 30px;*/
+		/*text-align: right; */
+		/*line-height: 200%;*/ 				/* corresponds with double spacing */
+		/*text-shadow: 4px 4px 2px rgba(150, 215, 150, 1);*/
+		} 
+
+/*ul 	{
+	color: navy;
+	list-style-type: square;	
+	list-style-position: outside;
+	}*/
+	
+/*main  {
+	border: inset 2px blue;
+	padding: 10px;
+	}
+	*/
+	
+/* Grouping Elements */
+
+/*h1,h2,h3,h4,h5,h6	{
+					color:aqua;
+					}*/
+		
+/* Class Selectors */		
+	
+/*.big	{
+		font-size: 120%;
+		}*/
+
+/*li.big	{
+		font-variant: small-caps;
+		}*/
+
+
+/*.italic {font-style: italic;}*/
+
+/* ID Selectors */
+
+/*#wrapper { 
+	margin-left: auto;
+    margin-right: auto;
+    width: 80%;  
+	}*/
+	
+/* Navigation */
+
+/*nav	{
+		text-align: left;
+		margin: auto;
+		width: 300px;
+		border: inset 10px green;
+		padding: 10px;
+		}*/	
+
+/* Anchor Pseudoclass Selectors */
+
+/*a 			{color: gray; font-style: italic;} */
+
+/*a:link		{color: green; text-decoration: underline; font-style: normal;}
+a:visited	{color: red; text-decoration: none;}
+a:hover		{color: purple; text-decoration: none;}
+a:active	{color: orange; text-decoration: none; font-size: 200%;} */
+
+
+/* Pseudoelements Selectors */
+
+/*
+p:first-line 	{
+				color:gray;
+				}
+
+p:first-letter 	{
+				color:red;
+				font-size:xx-large;
+				} */
