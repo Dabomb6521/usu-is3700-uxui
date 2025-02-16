@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+body {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"main main"
+		"footer footer";
+	grid-template-rows: 100px 60px 1fr 60px;
+	grid-template-columns: 15% 1fr;
+	height: 100vh;
+	font-family: 'Fira Sans', sans-serif;
+	margin: 0 auto;
+}
+
+/* Styles */
+
+header {
+	background-color: #011946;
+	padding: 10px 20px;
+}
+
+footer, main, nav {
+	padding: 20px;
+}
+
+nav, footer {
+	background-color: #c2d5db;
+}
+
+#pageHeader {
+	grid-area: header;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+#mainLogo {
+	height: 80px;
+}
+
+#mainContent {
+	grid-area: main;
+}
+
+#pageFooter {
+	grid-area: footer;
+}
+
+#mainNav {
+	grid-area: nav;
+	border-bottom: 2px solid #011946;
+}
+
+#mainNav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainNav li {
+	display: block;
+	float: left;
+}
+
+#mainNav ul li a {
+	padding: 20px 10px;
+	text-decoration: none;
+	color: #011946;
+}
+
+#mainNav ul li a:hover {
+	color: #fff;
+}
+
+#mainNav .current a {
+	background-color: #d4ebf2;
+	padding: 14px 10px;
+	color: #011946;
+	border: 6px solid transparent;
+	border-bottom-color: #011946;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+	color: #011946;
+}
+
+footer {
+	border-top: 2px solid #011946;
+	text-align: left;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+footer li {
+	display: inline;
+	margin-right: 1em;
+	font-size: 125%;
+}
+
+footer li a {
+	text-decoration: none;
+	color: #011946;
+}
+
+footer li a:visited {
+	color: #551A8B;
+}
+
+p {
+	padding-bottom: 10px;
+}
+
+/* end */
