@@ -1,34 +1,82 @@
 body {
     background-color: #FCEBB6;
+    background-image: url(images/fadedroad50.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: #221811;
     font-family: Tahoma, Arial, Geneva, Verdana, sans-serif;
-}
-header {
-    color: #8C3826;
-    background-color: #D2B48C;
-    text-align: center;
-}
-h1 {
-    line-height: 200%;
-    font-family: orbitron;
-}
-h2 {
-    color: #8C3826;
-    font-family: orbitron;
-}
-nav {
-    text-align: center;
-    font-weight: bold;
-}
-footer {
-    background-color: #D2B48C;
-    font-size: .60em;
-    text-align: center;
-    font-style: italic;
 }
 #wrapper {
     width: 80%;
     background-color: #FEFAEB;
     margin-right: auto;
     margin-left: auto;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 3px 3px black;
+}
+header {
+    color: #8C3826;
+    background-color: #D2B48C;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h1 {
+    line-height: 3em;
+}
+h2 {
+    color: #8C3826;
+}
+h3 {
+    color: #8C3826;
+}
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: .5em;
+    padding-bottom: .25em;
+}
+nav {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+nav a {
+    text-decoration: none;;
+}
+dt {
+    color: #8C3826;
+}
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+.details {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+
+}
+#homehero {
+    background-size: cover;
+    background-image: url(images/hero.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+footer {
+    background-color: #D2B48C;
+    font-size: .60em;
+    text-align: center;
+    font-style: italic;
+    padding: 1em;
+    border-top: 2px solid #8C3826;
 }
