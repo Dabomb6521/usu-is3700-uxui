@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FCEBB6;
     background-image: url(images/fadedroad50.jpg);
@@ -7,71 +11,159 @@ body {
     color: #221811;
     font-family: Tahoma, Arial, Geneva, Verdana, sans-serif;
 }
+
 #wrapper {
     width: 80%;
-    background-color: #FEFAEB;
+    background-color: #231814;
     margin-right: auto;
     margin-left: auto;
+    padding: 0;
     min-width: 900px;
     max-width: 1280px;
     box-shadow: 3px 3px black;
 }
+
 header {
-    color: #8C3826;
+    color: #231814;
     background-color: #D2B48C;
-    text-align: center;
+    background-image: url(images/coffeelogo.jpg);
+    background-repeat: no-repeat;
+    padding-left: 240px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 2.25em;
 }
+
+header a {
+    text-decoration: none;
+}
+header a:hover {
+    color: #FEF6C2;
+}
+
+header a:link {
+    color: #231814;
+}
+
+header a:visited {
+    color: #231814;
+}
+
 h1 {
-    line-height: 3em;
+    font-size: 2.5em;
 }
+
 h2 {
     color: #8C3826;
 }
+
 h3 {
     color: #8C3826;
 }
+
 h4 {
     background-color: #D2B48C;
     font-size: 1.2em;
     padding-left: .5em;
-    padding-bottom: .25em;
+    padding-bottom: 0em;
+    text-transform: uppercase;
+    border-bottom: #221811 1px solid;
+    clear: left;
 }
+
 nav {
+    float: left;
+    width: 200px;
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-nav a {
-    text-decoration: none;;
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
 }
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color:#FEF6C2;
+}
+
+nav a:visited {
+    color: #D2B48C;
+}
+nav a:hover {
+    color: #CC9933;
+}
+
 dt {
     color: #8C3826;
 }
+
 main {
-    padding-left: 2em;
-    padding-right: 2em;
+    background-color: #FEF6C2;
+    overflow: auto;
+    display: block;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 2em;
+    margin-left: 200px;
 }
-.details {
-    padding-left: 20%;
-    padding-right: 20%;
+
+main h2, h3, h4, p, div, ul, dl {
+    padding-left: 3em;
+    padding-right: 2em;
 }
+
 img {
     border-style: none;
     max-width: 100%;
     height: auto;
 
 }
+
+.details {
+    overflow: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+.onethird {
+    float: left;
+    width: 33%;
+}
+
 #homehero {
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url(images/hero.jpg);
     background-repeat: no-repeat;
     height: 300px;
 }
+
+#heromugs {
+    background-size: 100% 100%;
+    background-image: url(images/heromugs.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#heroguitar {
+    background-size: 100% 100%;
+    background-image: url(images/heroguitar.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
 footer {
     background-color: #D2B48C;
     font-size: .60em;
