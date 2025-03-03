@@ -36,17 +36,17 @@ header {
 header a {
     text-decoration: none;
 }
+header a:link {
+    color: #231814;
+}
+header a:visited {
+    color: #231814;
+}
 header a:hover {
     color: #FEF6C2;
 }
 
-header a:link {
-    color: #231814;
-}
 
-header a:visited {
-    color: #231814;
-}
 
 h1 {
     font-size: 2.5em;
