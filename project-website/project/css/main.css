@@ -1,7 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
 body {
     font-family: 'Share Tech Mono', Arial, sans-serif;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+}
+nav {
+  text-align: center;
+  font-size: 1.5em;
+}
+nav a {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+	flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+	padding: 0;
+}
+nav li {
+	padding: .5em 1em;
+	/* width: 100%; */
+}
+footer {
+  flex-shrink: 0;
+}
+.footernav {
+  /* display: flex;
+  flex-direction: column; */
+  background-color: #333;
+  height: 6em;
+  
+}
+.footernav a {
+  color:#f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2em 1em;
+  font-size: 1.2em;
+  float: left;
+}
+.footernav a:hover{
+  color: black;
+  background-color: white;
+}
+h1 {
+  font-size: 4em;
+}
+#resume {
+  display: inline-block;
+  width: 50%;
+  height: 60em;
+  
 }
