@@ -47,6 +47,21 @@ nav li:hover a {
 h1 {
   font-size: 4em;
 }
+.readings-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.readings-gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 #resume {
   display: inline-block;
   width: 50%;
