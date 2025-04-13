@@ -40,12 +40,15 @@ nav li:hover a {
 #headshot {
   border: 4px solid black;
   border-radius: 5%;
-  max-height: 30em;
+  /* max-height: 30em; */
   box-shadow: 10px 10px 5px grey;
 }
 
 h1 {
   font-size: 4em;
+}
+.flex-container {
+  display: flex;
 }
 .readings-gallery {
   display: flex;
