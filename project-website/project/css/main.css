@@ -50,7 +50,7 @@ h1 {
 .flex-container {
   display: flex;
 }
-.readings-gallery {
+/* .readings-gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -64,7 +64,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-}
+} */
 #resume {
   display: inline-block;
   width: 50%;
