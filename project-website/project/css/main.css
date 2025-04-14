@@ -65,6 +65,15 @@ h1 {
   align-items: center;
   width: 100%;
 } */
+.reading-gallery-image {
+  height: 20em
+}
+.readings-background {
+  background-color: #26506d; 
+  border-radius: 2em; 
+  padding: 20px;
+  margin: 1em;
+}
 #resume {
   display: inline-block;
   width: 50%;
