@@ -9,11 +9,9 @@ const loadingTask = pdfjsLib.getDocument(pdfUrl);
 loadingTask.promise.then(pdf => {
     // Render the first page of the PDF
     pdf.getPage(1).then(page => {
-        const viewport = page.getViewport({ scale: 1.5 });
+        const viewport = page.getViewport({ scale: 1 }); // Start with scale 1
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
         container.appendChild(canvas);
 
         // Function to resize and render the PDF responsively
@@ -27,9 +25,15 @@ loadingTask.promise.then(pdf => {
             // Get a new viewport with the calculated scale
             const scaledViewport = page.getViewport({ scale });
 
-            // Set canvas dimensions
-            canvas.width = scaledViewport.width;
-            canvas.height = scaledViewport.height;
+            // Set canvas dimensions for higher resolution
+            const outputScale = window.devicePixelRatio || 1; // Use device pixel ratio for better quality
+            canvas.width = Math.floor(scaledViewport.width * outputScale);
+            canvas.height = Math.floor(scaledViewport.height * outputScale);
+            canvas.style.width = `${scaledViewport.width}px`;
+            canvas.style.height = `${scaledViewport.height}px`;
+
+            // Scale the context for high-resolution rendering
+            context.scale(outputScale, outputScale);
 
             // Render the page into the canvas
             page.render({
