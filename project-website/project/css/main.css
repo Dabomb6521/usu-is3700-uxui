@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 .wrapper{
   display: flex;
@@ -74,11 +75,21 @@ h1 {
   padding: 20px;
   margin: 1em;
 }
+#resumeDownload {
+  font-size: 2rem;
+  width: 5%;
+}
 #resume {
   display: inline-block;
   width: 50%;
   height: 60em;
   
+}
+#pdf-viewer {
+  border: 1px solid #ccc; 
+  width: 100%; 
+  height: 800px; 
+  overflow: auto;
 }
 footer {
   flex-shrink: 0;
