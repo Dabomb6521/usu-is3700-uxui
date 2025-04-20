@@ -7,19 +7,16 @@ const container = document.getElementById('pdf-viewer');
 // Load the PDF using PDF.js
 const loadingTask = pdfjsLib.getDocument(pdfUrl);
 loadingTask.promise.then(pdf => {
-    // Render the first page of the PDF
-    pdf.getPage(1).then(page => {
-        const viewport = page.getViewport({ scale: 1 }); // Start with scale 1
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-        container.appendChild(canvas);
+    // Function to render a specific page
+    const renderPage = (pageNumber) => {
+        pdf.getPage(pageNumber).then(page => {
+            const viewport = page.getViewport({ scale: 1 }); // Start with scale 1
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            container.appendChild(canvas);
 
-        // Function to resize and render the PDF responsively
-        const renderPage = () => {
-            // Get the container's width
+            // Dynamically calculate the scale based on container width
             const containerWidth = container.offsetWidth;
-
-            // Calculate the scale based on the container's width
             const scale = containerWidth / viewport.width;
 
             // Get a new viewport with the calculated scale
@@ -40,13 +37,21 @@ loadingTask.promise.then(pdf => {
                 canvasContext: context,
                 viewport: scaledViewport
             });
-        };
+        });
+    };
 
-        // Initial render
-        renderPage();
+    // Render all pages
+    for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+        renderPage(pageNumber);
+    }
 
-        // Re-render on window resize
-        window.addEventListener('resize', renderPage);
+    // Re-render all pages on window resize for responsiveness
+    window.addEventListener('resize', () => {
+        // Clear the container and re-render all pages
+        container.innerHTML = '';
+        for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber++) {
+            renderPage(pageNumber);
+        }
     });
 }).catch(error => {
     console.error('Error loading PDF:', error);
