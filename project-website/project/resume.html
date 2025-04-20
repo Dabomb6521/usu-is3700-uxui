@@ -21,15 +21,12 @@
       </ul>
     </nav>
     <h1>RESUME</h1>
+    <p id="resumeButton">Click here to downoad resume</p>
     <div class="container">
-      <!-- <embed id="resume" src="assets/Brayden Corbridge Resume mar 2024.pdf" type="application/pdf"> -->
-      <object 
-        data="assets/Brayden Corbridge Resume mar 2024.pdf"
-        type="application/pdf"
-        width="100%"
-        height="800px"
-      ></object>
+      <div id="pdf-viewer" style="border: 1px solid #ccc; width: 100%; height: 800px; overflow: auto;"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="js/showresume.js"></script>
   </body>
 </html>
 
