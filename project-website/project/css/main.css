@@ -16,6 +16,8 @@ nav {
   font-size: 1.5em;
   display: flex;
   justify-content: right;
+  background-color: lightgray;
+  margin-bottom: 1rem;
 }
 nav a {
   text-decoration: none;
@@ -40,7 +42,6 @@ nav li:hover a {
 #headshot {
   border: 4px solid black;
   border-radius: 5%;
-  /* max-height: 30em; */
   box-shadow: 10px 10px 5px grey;
 }
 
