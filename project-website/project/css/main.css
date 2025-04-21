@@ -88,7 +88,7 @@ h1 {
 #pdf-viewer {
   border: 1px solid #ccc; 
   width: 100%; 
-  height: 475px; 
+  height: 80rem; 
   overflow: auto;
 }
 footer {
